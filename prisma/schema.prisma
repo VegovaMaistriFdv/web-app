@@ -11,6 +11,7 @@ model Fire {
   id        Int      @id @default(autoincrement())
   source    String
   timestamp DateTime @default(now())
-  latitude  String
-  longitude String
+  lat       String
+  lng       String
+  placeName String?
 }

@@ -9,7 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@mui/material": "^5.14.12",
+    "@mui/x-date-pickers": "^6.16.1",
     "@prisma/client": "^5.4.1",
+    "@react-google-maps/api": "^2.19.2",
+    "dayjs": "^1.11.10",
+    "material-icons": "^1.13.12",
     "next": "13.5.4",
     "prisma": "^5.4.1",
     "react": "^18",
