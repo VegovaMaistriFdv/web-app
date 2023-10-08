@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Fire" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "source" TEXT NOT NULL,
+    "timestamp" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "latitude" INTEGER NOT NULL,
+    "longitude" INTEGER NOT NULL
+);

@@ -1,5 +1,5 @@
 {
-  "name": "fdv-app",
+  "name": "fdv-web-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.4.1",
+    "next": "13.5.4",
+    "prisma": "^5.4.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "sass": "^1.69.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }
