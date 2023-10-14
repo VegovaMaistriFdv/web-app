@@ -29,58 +29,11 @@ $transition-link-hover: 50ms ease
   margin: 0
   box-sizing: border-box
 
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-  -webkit-tap-highlight-color: transparent
-
-  --nav-height: 50px
-  @media (max-width: 600px)
-    --nav-height: 55px
-
-  ::selection
-    color: whitesmoke
-    background-color: #b31412
-
-  .display-none
-    display: none !important
-
 html
   background-color: #fff
   min-height: 100vh !important
   scroll-behavior: smooth
 
-  // Scrollbar
-  ::-webkit-scrollbar
-    width: $scrollbar-width
-
-  ::-webkit-scrollbar-track
-    background-color: #fff
-    margin: 2px !important
-
-  ::-webkit-scrollbar-thumb
-    background-color: #cecece
-    border-radius: 30px
-    border: solid 2px #fff
-
-  @media (max-width: 600px)
-    ::-webkit-scrollbar, ::-webkit-scrollbar-track
-      display: none !important
-
-  body
-    width: 100%
-
-    // Disable scroll when nav is open
-    &.nav-is-open
-      @media (max-width: 600px)
-        overflow-y: hidden
-
-    // Disable scroll when nav is not open
-    &.disableScroll:not(.nav-is-open)
-      overflow-y: scroll
-      position: fixed
-    @media (min-width: 600px)
-      &.disableScroll
-        overflow-y: scroll
-        position: fixed
 
 main
   padding-top: 70px

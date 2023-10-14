@@ -1,4 +1,4 @@
-.wrapper
+.headerWrapper
   position: fixed
   top: 0
   left: 0
@@ -9,13 +9,14 @@
   z-index: 20
 
   .container
-    padding: 12px 24px
+    padding: 14px 24px
     display: flex
+    justify-content: space-between
     align-items: center
+
     .logo
       height: 30px
       display: flex
-      flex: 1
       align-items: flex-end
       gap: 8px
       line-height: 12px
@@ -27,15 +28,35 @@
       span
         font-size: 18px
 
-    .buttonsContainer
-      .button span
-        cursor: pointer !important
+    .buttons
+      display: flex
+      align-items: center
+      gap: 24px
+      padding: 0 24px
+
+      .viewSwitch
+        display: flex
+        border: solid 1px grey
+        border-radius: 16px
+
+        div
+          padding: 8px 32px
+          margin: 1px
+          border-radius: 16px
+          &.active
+            background-color: #e7f3e6
+          
+
+      .button
+        cursor: pointer
 
   .calendarWrapper
     position: fixed
-    top: 55px
-    left: 0
-    width: 100%
+    top: 48px
+    // left: 50%
+    right: 12px
+    // transform: translateX(-50%)
+    width: auto
     z-index: 10
     padding: 6px
     
